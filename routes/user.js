@@ -180,7 +180,7 @@ router.get("/attendance", async (req, res) => {
 });
 //delete user by email
 // Import JWT utility
-router.delete("/attendance", async (req, res) => {
+router.delete("/deleteAll/attendance", async (req, res) => {
   try {
     // Delete all attendance records from the database
     await attendance.deleteMany({});
